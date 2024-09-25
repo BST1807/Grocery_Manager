@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "grocery_backend": {
+      "main": "src/grocery_backend/main.mo",
+      "type": "motoko"
+    },
+    "grocery_frontend": {
+      "dependencies": [
+        "grocery_backend"
+      ],
+      "source": [
+        "src/grocery_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "grocery_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
